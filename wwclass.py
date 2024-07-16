@@ -1,3 +1,17 @@
+class student:
+    def __init__(self, name:str, std_id:int):
+        self.name = name
+        self.std_id = std_id
+        self.borrowed_books = []
+
+    def borrow_books(self, book_name: str):
+        self.borrowed_books.append(book_name)
+
+
+    def __str__(self):
+        return f'Student: {self.name}\t Id: {self.std_id} \t borrowed books: {self.borrowed_books}\n'
+    
+
 class library:
     def __init__(self):
         self.books = {}
@@ -33,19 +47,7 @@ class library:
 
 
 
-class student:
-    def __init__(self, name:str, std_id:int):
-        self.name = name
-        self.std_id = std_id
-        self.borrowed_books = []
-
-    def borrow_books(self, book_name: str):
-        self.borrowed_books.append(book_name)
-
-
-    def __str__(self):
-        return f'Student: {self.name}\t Id: {self.std_id} \t borrowed books: {self.borrowed_books}\n'
-        
+    
 
 
 #Objects:
